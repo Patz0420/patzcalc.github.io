@@ -9,52 +9,42 @@
     margin: 0;
     background: linear-gradient(to right, #021f2e, #645b27);
   }
-  .output
+
+  .calculator
   {
-    min-height: 100px;
-    max-height: 100px;
-    max-width: 270px;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    border-radius: 10px;
+    border: 1px solid #643636 ;
+    width: 300px;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 90px;
+    max-height: 440px;
+    box-shadow:rgba(0, 0, 0, 0.459) 1px 1px 1px 2px;
   }
+
+  .calculator button {
+    cursor: pointer;
+    font-size: 15px;
+    outline: none;
+    background-color: #1093d402;
+    border-radius: 50%;
+    border: 1px solid  rgba(223, 12, 12, 0.432);
+  }
+
+
   .item-button
   {
     display: grid;
     justify-content: center;
     align-content: center;
-    grid-template-columns: repeat(4, 60px);
-    grid-template-rows: repeat(6, 60px);
+    grid-template-columns: repeat(4, 50px);
+    grid-template-rows: repeat(5, 50px);
     grid-gap: 10px;
 
   }
   
-  .calculator {
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    margin-top: 10px;
-    border: 2px solid rgba(138, 31, 31, 0.822);
-    max-width: 100px;
-    border-width: 3px;
-    border-radius: 20px;
-    margin: 160px;
-    min-width: 350px;
-    
-  }
-  
-  .calculator button {
-    cursor: pointer;
-    font-size: 16px;
-    border: 1px solid rgb(189, 110, 110);
-    outline: none;
-    background-color: rgba(122, 31, 31, 0.11);
-    border-radius: 50%;
-    
-  }
-  
   .calculator button:hover {
-    background-color: rgba(211, 124, 38, 0.527);
+    background-color: rgba(255, 255, 255, 0.527);
+    color: red;
   }
   
   .span-two {
@@ -63,23 +53,38 @@
   
   .output {
     grid-column: 1 / -1;
-    background-color: #344a9259;
+    background-color: #344a9200;
     display: flex;
-    align-items: flex-end;
+    align-items:flex-end;
     justify-content: space-around;
     flex-direction: column;
     padding: 10px;
     word-wrap: break-word;
     word-break: break-all;
-    border: 2px solid #8379426c;
+    min-height: 60px;
+    margin-right: 20px 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ad2626;
+    border-radius: 20px;
   }
   
   .output .previous-operand {
     color: rgba(255, 255, 255, .75);
-    font-size: 1.5rem;
+    font-size: 15px;
   }
   
   .output .current-operand {
     color: white;
-    font-size: 2.5rem;
+    font-size: 18px;
+  }
+  #operation
+  {
+    color: #c9db20;
+    border: 1px solid #2400c47c;
+  }
+  #equals
+  {
+    color: #152ae2;
+    border: 1px solid #1eff297c;
   }
